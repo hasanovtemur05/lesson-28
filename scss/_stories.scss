@@ -1,0 +1,147 @@
+.stories{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        font-size: 34px;
+        font-family: "font";
+        color: white;
+    }
+    p{
+        font-size: 16px;
+        font-family: "font";
+        padding: 8px 0px 30px 0px;
+        color: white;
+    }
+    .card__img{
+        img{
+            margin: 30px 0px;
+        }
+    }
+}
+.stories__cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    .stories__card{
+        width: 348px;
+        height: 359px;
+        background-color: white;
+        border-radius: 8px;
+       overflow: hidden;
+       p{
+        font-size: 16px;
+        color: #22343D;
+        font-family: "font";
+        padding: 17px 24px;
+       }
+       h3{
+        font-size: 24px;
+        color: #22343D;
+        font-family: "font";
+        font-weight: bold;
+        padding: 0px 24px;
+       }
+    }
+}
+@media (max-width:1300px){
+    .stories__cards{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+@media (max-width:992px){
+    .stories{
+        h1{
+            font-size: 28px;
+        }
+        p{
+            font-size:14px ;
+            padding: 0px 0px 20px;
+        }
+    }
+    .stories__cards{
+        display: flex;
+        justify-content: center;
+        .stories__card{
+            width: 80%;
+            height: auto;
+            img{
+                width: 100%;
+                height: auto;
+            }
+            p{
+                padding: 0px 30px;
+            }
+            h3{
+                padding: 20px 30px 20px 30px;
+            }
+        }
+    }
+}
+@media (max-width:768px){
+    .stories{
+        h1{
+            font-size: 26px;
+        }
+        p{
+            font-size:12px ;
+            padding: 0px 0px 20px;
+        }
+    }
+    .stories__cards{
+        display: flex;
+        justify-content: center;
+        .stories__card{
+            width: 80%;
+            height: auto;
+            img{
+                width: 100%;
+                height: auto;
+            }
+            p{
+                font-size: 16px;
+                padding: 0px 30px;
+            }
+            h3{
+                font-size: 20px;
+                padding: 20px 30px;
+            }
+        }
+    }
+}
+@media (max-width:576px){
+    .stories{
+        h1{
+            font-size: 24px;
+        }
+        p{
+            font-size:10px ;
+            padding: 0px 0px 20px;
+        }
+    }
+    .stories__cards{
+        display: flex;
+        justify-content: center;
+        .stories__card{
+            width: 80%;
+        height: auto;
+            p{
+                font-size: 12px;
+                padding: 0px 30px 20px 30px;
+            }
+            h3{
+                font-size: 16px;
+                padding: 0px 20px 20px 20px;
+            }
+        }
+    }
+}
